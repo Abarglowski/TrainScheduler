@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en-us">
+
+
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Train Homework</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="reset/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="assets/javascript/script.js"></script>
+</head>
+<body>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card mb-4 p-4">
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="Train-Name">Train Name</label>
+                <input type="text" class="form-control" id="Name" aria-describedby="name">
+              </div>
+
+              <div class="form-group">
+                <label for="Destination">Destination</label>
+                <input type="text" class="form-control" id="Destination">
+              </div>
+
+              <div class="form-group">
+                <label for="FirstTrain">First Train Time</label>
+                <input type="text" class="form-control" id="FirstTrain">
+              </div>
+
+              <div class="form-group">
+                <label for="Frequency">Frequency</label>
+                <input type="text" class="form-control" id="Arrival" >
+              </div>
+
+              <div class="form-group row">
+                <label for="Minutes">Next arrival</label>
+                <input type="text" class="form-control" id="nextArrival" placeholder="How long until this train arrives">
+              </div>
+
+              <button type="submit"   id="submit" class="btn btn-primary">Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+      <div class="col-mb-4">
+        <div class="card-body">
+          <table class="table table-sm table-hover"  id="TrainData">
+            <thead>
+              <tr>
+                <th scope="col">Train:</th>
+                <th scope="col">Destination:</th>
+                <th scope="col">First Train Time:</th>
+                <th scope="col">Frequency:</th>
+                <th scope="col">Next Arrival:</th>
+              </tr>
+            </thead>
+            <tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
